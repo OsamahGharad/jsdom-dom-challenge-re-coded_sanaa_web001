@@ -20,13 +20,13 @@ let intervalID = window.setInterval(counterincrement,1000);
 //pause the counter
 function pauseCounter(){
   window.clearTimeout(intervalID);
-  if (!puaseC){
-    puaseC = true ;
+  if (!pauseC){
+    pauseC = true ;
     document.getElementById("plus").removeEventListener("click",plusCounter);
     document.getElementById("minus").removeEventListener("click",minCounter);
     document.getElementById("pause").innerHTML = "resume";
   }else{
-    puaseC = false ;
+    pauseC = false ;
     plus.addEventListener("click" ,inc_fuc);
     minus.addEventListener("click" , dec_fuc);
     document.getElementById("pause").innerHTML = "pause";
