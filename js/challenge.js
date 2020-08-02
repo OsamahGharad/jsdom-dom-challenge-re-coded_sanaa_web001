@@ -1,3 +1,7 @@
+// A Counter that increases by 1 each second
+// * Plus and Minus buttons that increment or decrement the counter
+// * A 'like' button (❤️) that adds a 'like' for the number that is currently displayed by the timer
+// * A comment box that adds comments when submitted
 
 let pauseC = false;
 
@@ -16,6 +20,17 @@ let intervalID = window.setInterval(counterincrement,1000);
 //pause the counter
 function pauseCounter(){
   window.clearTimeout(intervalID);
+  if (!puaseC){
+    puaseC = true ;
+    document.getElementById("plus").removeEventListener("click",plusCounter);
+    document.getElementById("minus").removeEventListener("click",minCounter);
+    document.getElementById("pause").innerHTML = "resume";
+  }else{
+    puaseC = false ;
+    plus.addEventListener("click" ,inc_fuc);
+    minus.addEventListener("click" , dec_fuc);
+    document.getElementById("pause").innerHTML = "pause";
+  }
   }
 
   let pause = document.getElementById('pause');
