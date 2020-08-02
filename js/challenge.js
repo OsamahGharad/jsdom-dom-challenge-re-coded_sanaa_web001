@@ -60,5 +60,5 @@ like.addEventListener("click" ,counterincrement);
     const comment= document.createElement('p');
     comment.innerText=commentForm.value;
     commentLists.appendChild(comment);
-    // console.log(commentLists);
+    console.log(commentLists);
   });
