@@ -33,7 +33,7 @@ function pauseCounter(){
   const minus =document.getElementById('minus');
   minus.addEventListener('click',minCounter);
 
-  function plusCounte(){
+  function plusCounter(){
     let counter = document.getElementById("counter");
     let counterValue=parseInt(counter.innerHTML,10);
     if(pauseC == false){
