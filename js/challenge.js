@@ -14,7 +14,7 @@ let puaseF = false ;
 
   }, 1000);
 // let puaseCounter = false ;
-// 
+//
 // //start timer
 // function counterincrement() {
 //   let counter = document.getElementById("counter");
@@ -24,7 +24,7 @@ let puaseF = false ;
 //     counter.innerHTML=`${counterValue}`;
 // }
 // }
-// 
+//
 // let intervalID = window.setInterval(counterincrement,1000);
 
 //pause the counter
