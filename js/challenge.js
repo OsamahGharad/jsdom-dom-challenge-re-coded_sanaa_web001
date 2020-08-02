@@ -21,6 +21,7 @@ function pauseCounter(){
   let pause = document.getElementById('pause');
   pause.addEventListener('click',pauseCounter);
 
+ /////////////////////////////
 
   function minCounter(){
     let counter = document.getElementById("counter");
@@ -32,6 +33,7 @@ function pauseCounter(){
   }
   const minus =document.getElementById('minus');
   minus.addEventListener('click',minCounter);
+  ///////////////////////
 
   function plusCounter(){
     let counter = document.getElementById("counter");
@@ -41,8 +43,10 @@ function pauseCounter(){
       counter.innerHTML=`${counterValue}`;
       }
   }
-  const plus =document.getElementById('minus');
+  const plus =document.getElementById('plus');
   plus.addEventListener('click',plusCounter);
+
+  /////////////////////////
 
   const commnetForm= document.querySelector('#comment-form');
   commnetForm.addEventListener('submit',function(event){
