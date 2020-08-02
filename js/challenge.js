@@ -21,7 +21,7 @@ function pauseCounter(){
   let pause = document.getElementById('pause');
   pause.addEventListener('click',pauseCounter);
 
- /////////////////////////////
+ ///////min/////////
 
   function minCounter(){
     let counter = document.getElementById("counter");
@@ -35,6 +35,7 @@ function pauseCounter(){
   minus.addEventListener('click',minCounter);
   ///////////////////////
 
+// add plus///
   function plusCounter(){
     let counter = document.getElementById("counter");
     let counterValue=parseInt(counter.innerHTML,10);
@@ -46,11 +47,13 @@ function pauseCounter(){
   const plus =document.getElementById('plus');
   plus.addEventListener('click',plusCounter);
 
-  /////////////////////////
+  ////////////add likes/////////////
   let like = document.getElementById("heart") ;
 like.addEventListener("click" ,counterincrement);
 //////////////////////////////
 
+
+/////////////Add Comments/////////////
   const commnetForm= document.querySelector('#comment-form');
   commnetForm.addEventListener('submit',function(event){
     event.preventDefault();
