@@ -20,9 +20,15 @@ function pauseCounter(){
 
   let pause = document.getElementById('pause');
   pause.addEventListener('click',pauseCounter);
+  
 
   function minCounter(){
-     counter -=1;
+    let counter = document.getElementById("counter");
+    let counterValue=parseInt(counter.innerHTML,10);
+    if(pauseC == false){
+      counterValue -=1;
+      counter.innerHTML=`${counterValue}`;
+      }
   }
   const minus =document.getElementById('minus');
   minus.addEventListener('click',minCounter);
