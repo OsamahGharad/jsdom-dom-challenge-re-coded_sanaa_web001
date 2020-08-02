@@ -1,5 +1,5 @@
 
-let pauseCounter = false;
+let pauseC = false;
 
 //start timer
 function counterincrement() {
