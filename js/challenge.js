@@ -47,6 +47,13 @@ function pauseCounter(){
   plus.addEventListener('click',plusCounter);
 
   /////////////////////////
+  let like = document.getElementById("heart") ;
+like.addEventListener("click" , (e) => {
+
+ intervalId;
+
+});
+//////////////////////////////
 
   const commnetForm= document.querySelector('#comment-form');
   commnetForm.addEventListener('submit',function(event){
