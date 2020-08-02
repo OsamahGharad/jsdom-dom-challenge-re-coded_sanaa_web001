@@ -48,11 +48,7 @@ function pauseCounter(){
 
   /////////////////////////
   let like = document.getElementById("heart") ;
-like.addEventListener("click" , (e) => {
-
- intervalId;
-
-});
+like.addEventListener("click" ,counterincrement);
 //////////////////////////////
 
   const commnetForm= document.querySelector('#comment-form');
