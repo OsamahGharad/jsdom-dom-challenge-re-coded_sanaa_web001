@@ -20,7 +20,7 @@ function pauseCounter(){
 
   let pause = document.getElementById('pause');
   pause.addEventListener('click',pauseCounter);
-  
+
 
   function minCounter(){
     let counter = document.getElementById("counter");
