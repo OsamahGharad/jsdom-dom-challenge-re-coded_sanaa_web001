@@ -29,6 +29,7 @@ function pauseCounter(){
     pauseC = false ;
     plus.addEventListener("click" ,plusCounter);
     minus.addEventListener("click" , minCounter);
+    let intervalID = window.setInterval(counterincrement,1000);
     document.getElementById("pause").innerHTML = "pause";
   }
   }
