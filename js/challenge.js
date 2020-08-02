@@ -6,7 +6,7 @@ let pauseCounter = false;
 function counterincrement() {
   let counter = document.getElementById("counter");
   let counterValue=parseInt(counter.innerHTML,10);
-  if(pauseCounter ==false){
+  if(pauseCounter == false){
     counterValue +=1;
     counter.innerHTML=`${counterValue}`;
 }
