@@ -1,31 +1,18 @@
 
-let puaseF = false ;
 
-   let intervalId = window.setInterval(
-    function () {
-        let counter = document.getElementById("counter") ;
-        let valueS = counter.innerHTML ;
-        let valueI = parseInt(valueS , 10) ;
-        if (!puaseF){
-          valueI += 1 ;
-          counter.innerHTML = `${valueI}`;
-        }
+let puaseCounter = false ;
 
+//start timer
+function counterincrement() {
+  let counter = document.getElementById("counter");
+  let counterValue=parseInt(counter.innerHTML,10);
+  if(!pauseCounter){
+    counterValue +=1;
+    counter.innerHTML=`${counterValue}`;
+}
+}
 
-  }, 1000);
-// let puaseCounter = false ;
-//
-// //start timer
-// function counterincrement() {
-//   let counter = document.getElementById("counter");
-//   let counterValue=parseInt(counter.innerHTML,10);
-//   if(!pauseCounter){
-//     counterValue +=1;
-//     counter.innerHTML=`${counterValue}`;
-// }
-// }
-//
-// let intervalID = window.setInterval(counterincrement,1000);
+let intervalID = window.setInterval(counterincrement,1000);
 
 //pause the counter
 function pauseCounter(){
