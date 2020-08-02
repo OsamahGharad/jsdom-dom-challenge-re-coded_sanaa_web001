@@ -55,7 +55,7 @@ like.addEventListener("click" ,counterincrement);
   commnetForm.addEventListener('submit',function(event){
     event.preventDefault();
 
-    const commentForm=document.getElementById('comment-form');
+    const commentInput=document.getElementById('comment-input');
     const commentLists =document.getElementById('list');
     const comment= document.createElement('p');
     comment.innerHTML=commentForm.innerHTML;
