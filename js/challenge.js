@@ -27,8 +27,8 @@ function pauseCounter(){
     document.getElementById("pause").innerHTML = "resume";
   }else{
     pauseC = false ;
-    plus.addEventListener("click" ,inc_fuc);
-    minus.addEventListener("click" , dec_fuc);
+    plus.addEventListener("click" ,plusCounter);
+    minus.addEventListener("click" , minCounter);
     document.getElementById("pause").innerHTML = "pause";
   }
   }
