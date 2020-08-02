@@ -55,10 +55,10 @@ like.addEventListener("click" ,counterincrement);
   commnetForm.addEventListener('submit',function(event){
     event.preventDefault();
 
-    const commentInput=document.getElementById('comment-input');
+    const commentInput=document.getElementById('comment-input').value;
     const commentLists =document.getElementById('list');
     const comment= document.createElement('p');
-    comment.innerHTML=commentInput.innerHTML;
+    comment.innerHTML=`${commentInput}`;
     commentLists.appendChild(comment);
 
   });
