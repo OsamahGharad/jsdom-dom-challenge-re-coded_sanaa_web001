@@ -34,7 +34,12 @@ function pauseCounter(){
   minus.addEventListener('click',minCounter);
 
   function plusCounte(){
-       counter +=1;
+    let counter = document.getElementById("counter");
+    let counterValue=parseInt(counter.innerHTML,10);
+    if(pauseC == false){
+      counterValue +=1;
+      counter.innerHTML=`${counterValue}`;
+      }
   }
   const plus =document.getElementById('minus');
   plus.addEventListener('click',plusCounter);
