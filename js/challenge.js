@@ -58,7 +58,7 @@ like.addEventListener("click" ,counterincrement);
     const commentForm=document.getElementById('comment-form');
     const commentLists =document.getElementById('list');
     const comment= document.createElement('p');
-    comment.innerText=commentForm.value;
+    comment.innerHTML=commentForm.value;
     commentLists.appendChild(comment);
-    console.log(commentLists);
+    
   });
