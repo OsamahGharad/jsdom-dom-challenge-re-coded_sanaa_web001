@@ -1,6 +1,6 @@
 
 
-let pauseCounter = false ;
+let pauseCounter = false;
 
 //start timer
 function counterincrement() {
